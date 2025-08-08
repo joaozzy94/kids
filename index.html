@@ -93,8 +93,8 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Brinquedo 1 -->
                 <div class="card-hover bg-gradient-to-br from-red-100 to-pink-100 rounded-2xl p-6 border-2 border-red-200">
-                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('brinquedo1', 'Brinquedo Inflável Premium')">
-                        <img src="brinquedo1.jpg" alt="Brinquedo Inflável Premium" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
+                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('./imagem/1.png', 'Brinquedo Inflável Premium')">
+                        <img src="1.png" alt="Brinquedo Inflável 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
                         </div>
@@ -108,14 +108,14 @@
                         </div>
                         <div>
                             <p class="text-sm text-gray-600">Comprar</p>
-                            <p class="text-xl font-bold text-red-800">R$ 7.000</p>
+                            <p class="text-xl font-bold text-red-800">R$ 2.500</p>
                         </div>
                     </div>
                     <div class="flex space-x-2">
-                        <button onclick="openModal('Brinquedo Inflável Premium', '150', '7000', 'rent')" class="flex-1 bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
+                        <button onclick="openModal('Brinquedo Inflável Premium', '150', '2500', 'rent')" class="flex-1 bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded-lg transition-colors text-sm">
                             Alugar
                         </button>
-                        <button onclick="openModal('Brinquedo Inflável Premium', '150', '7000', 'buy')" class="flex-1 bg-red-700 hover:bg-red-800 text-white px-3 py-2 rounded-lg transition-colors text-sm">
+                        <button onclick="openModal('Brinquedo Inflável Premium', '150', '2500', 'buy')" class="flex-1 bg-red-700 hover:bg-red-800 text-white px-3 py-2 rounded-lg transition-colors text-sm">
                             Comprar
                         </button>
                     </div>
@@ -123,8 +123,8 @@
 
                 <!-- Brinquedo 2 -->
                 <div class="card-hover bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl p-6 border-2 border-blue-200">
-                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('brinquedo2', 'Brinquedo Aquático')">
-                        <img src="brinquedo2.jpg" alt="Brinquedo Aquático" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
+                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('./imagem/2.png', 'Brinquedo Aquático')">
+                        <img src="2.png" alt="Brinquedo Inflável 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
                         </div>
@@ -155,18 +155,10 @@
                 <div class="card-hover bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-6 border-2 border-green-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-a">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoA1', 'Super Brinquedo A - Foto 1')">
-                                <img src="brinquedoA1.jpg" alt="Super Brinquedo A - Foto 1" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoA2', 'Super Brinquedo A - Foto 2')">
-                                <img src="brinquedoA2.jpg" alt="Super Brinquedo A - Foto 2" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoA3', 'Super Brinquedo A - Foto 3')">
-                                <img src="brinquedoA3.jpg" alt="Super Brinquedo A - Foto 3" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoA4', 'Super Brinquedo A - Foto 4')">
-                                <img src="brinquedoA4.jpg" alt="Super Brinquedo A - Foto 4" class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
-                            </div>
+                            <img src="a (1).png" alt="Super Brinquedo A - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/a (1).png', 'Super Brinquedo A - Foto 1')">
+                            <img src="a (2).png" alt="Super Brinquedo A - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/a (2).png', 'Super Brinquedo A - Foto 2')">
+                            <img src="a (3).png" alt="Super Brinquedo A - Foto 3" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/a (3).png', 'Super Brinquedo A - Foto 3')">
+                            <img src="a (4).png" alt="Super Brinquedo A - Foto 4" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/a (4).png', 'Super Brinquedo A - Foto 4')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -202,14 +194,8 @@
 
                 <!-- Brinquedo B -->
                 <div class="card-hover bg-gradient-to-br from-orange-100 to-yellow-100 rounded-2xl p-6 border-2 border-orange-200">
-                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('brinquedoB', 'Brinquedo Especial B')">
-                        <div class="toy-image w-full h-full bg-gradient-to-br from-orange-200 to-orange-300">
-                            <div class="text-6xl mb-2 z-10 relative">🎨</div>
-                            <div class="w-32 h-20 bg-orange-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                <div class="text-white text-3xl">🎭</div>
-                            </div>
-                            <p class="text-orange-700 font-bold text-sm mt-2 z-10 relative">Especial</p>
-                        </div>
+                    <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer" onclick="openImageModal('./imagem/b (1).png', 'Brinquedo Especial B')">
+                        <img src="b (1).png" alt="Brinquedo Especial B" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
                         </div>
@@ -240,33 +226,9 @@
                 <div class="card-hover bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-6 border-2 border-purple-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-c">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoC1', 'Mega Brinquedo C - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-purple-200 to-purple-300">
-                                    <div class="text-5xl mb-2 z-10 relative">🎪</div>
-                                    <div class="w-28 h-16 bg-purple-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🎊</div>
-                                    </div>
-                                    <p class="text-purple-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoC2', 'Mega Brinquedo C - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-purple-300 to-purple-400">
-                                    <div class="text-5xl mb-2 z-10 relative">🎭</div>
-                                    <div class="w-28 h-16 bg-purple-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🎨</div>
-                                    </div>
-                                    <p class="text-purple-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoC3', 'Mega Brinquedo C - Foto 3')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-purple-400 to-purple-500">
-                                    <div class="text-5xl mb-2 z-10 relative">🎯</div>
-                                    <div class="w-28 h-16 bg-purple-700 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🎪</div>
-                                    </div>
-                                    <p class="text-purple-700 font-bold text-xs mt-1 z-10 relative">Foto 3</p>
-                                </div>
-                            </div>
+                            <img src="c (1).png" alt="Mega Brinquedo C - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/c (1).png', 'Mega Brinquedo C - Foto 1')">
+                            <img src="c (2).png" alt="Mega Brinquedo C - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/c (2).png', 'Mega Brinquedo C - Foto 2')">
+                            <img src="c (3).png" alt="Mega Brinquedo C - Foto 3" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/c (3).png', 'Mega Brinquedo C - Foto 3')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -299,38 +261,13 @@
                     </div>
                 </div>
 
-                <!-- Mais 6 brinquedos seguindo o mesmo padrão... -->
-                <!-- Brinquedo K -->
+                <!-- Brinquedo K (com carrossel) -->
                 <div class="card-hover bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl p-6 border-2 border-indigo-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-k">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoK1', 'Brinquedo Fantástico K - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-indigo-200 to-indigo-300">
-                                    <div class="text-5xl mb-2 z-10 relative">🚀</div>
-                                    <div class="w-28 h-16 bg-indigo-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">⭐</div>
-                                    </div>
-                                    <p class="text-indigo-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoK2', 'Brinquedo Fantástico K - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-indigo-300 to-indigo-400">
-                                    <div class="text-5xl mb-2 z-10 relative">🌟</div>
-                                    <div class="w-28 h-16 bg-indigo-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🚀</div>
-                                    </div>
-                                    <p class="text-indigo-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoK3', 'Brinquedo Fantástico K - Foto 3')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-indigo-400 to-indigo-500">
-                                    <div class="text-5xl mb-2 z-10 relative">✨</div>
-                                    <div class="w-28 h-16 bg-indigo-700 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🌟</div>
-                                    </div>
-                                    <p class="text-indigo-700 font-bold text-xs mt-1 z-10 relative">Foto 3</p>
-                                </div>
-                            </div>
+                            <img src="k (1).png" alt="Brinquedo Fantástico K - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/k (1).png', 'Brinquedo Fantástico K - Foto 1')">
+                            <img src="k (2).png" alt="Brinquedo Fantástico K - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/k (2).png', 'Brinquedo Fantástico K - Foto 2')">
+                            <img src="k (3).png" alt="Brinquedo Fantástico K - Foto 3" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/k (3).png', 'Brinquedo Fantástico K - Foto 3')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -363,38 +300,13 @@
                     </div>
                 </div>
 
-                <!-- Continuo com os outros brinquedos... -->
-                <!-- Brinquedo P -->
+                <!-- Brinquedo P (com carrossel) -->
                 <div class="card-hover bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl p-6 border-2 border-pink-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-p">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoP1', 'Brinquedo Perfeito P - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-pink-200 to-pink-300">
-                                    <div class="text-5xl mb-2 z-10 relative">🎀</div>
-                                    <div class="w-28 h-16 bg-pink-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">💖</div>
-                                    </div>
-                                    <p class="text-pink-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoP2', 'Brinquedo Perfeito P - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-pink-300 to-pink-400">
-                                    <div class="text-5xl mb-2 z-10 relative">🌸</div>
-                                    <div class="w-28 h-16 bg-pink-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🎀</div>
-                                    </div>
-                                    <p class="text-pink-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoP3', 'Brinquedo Perfeito P - Foto 3')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-pink-400 to-pink-500">
-                                    <div class="text-5xl mb-2 z-10 relative">💝</div>
-                                    <div class="w-28 h-16 bg-pink-700 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🌸</div>
-                                    </div>
-                                    <p class="text-pink-700 font-bold text-xs mt-1 z-10 relative">Foto 3</p>
-                                </div>
-                            </div>
+                            <img src="p (1).png" alt="Brinquedo Perfeito P - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/p (1).png', 'Brinquedo Perfeito P - Foto 1')">
+                            <img src="p (2).png" alt="Brinquedo Perfeito P - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/p (2).png', 'Brinquedo Perfeito P - Foto 2')">
+                            <img src="p (3).png" alt="Brinquedo Perfeito P - Foto 3" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/p (3).png', 'Brinquedo Perfeito P - Foto 3')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -427,28 +339,12 @@
                     </div>
                 </div>
 
-                <!-- Brinquedo T -->
+                <!-- Brinquedo T (com carrossel) -->
                 <div class="card-hover bg-gradient-to-br from-teal-100 to-cyan-100 rounded-2xl p-6 border-2 border-teal-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-t">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoT1', 'Brinquedo Top T - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-teal-200 to-teal-300">
-                                    <div class="text-5xl mb-2 z-10 relative">🏆</div>
-                                    <div class="w-28 h-16 bg-teal-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🥇</div>
-                                    </div>
-                                    <p class="text-teal-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoT2', 'Brinquedo Top T - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-teal-300 to-teal-400">
-                                    <div class="text-5xl mb-2 z-10 relative">🎖️</div>
-                                    <div class="w-28 h-16 bg-teal-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🏆</div>
-                                    </div>
-                                    <p class="text-teal-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
+                            <img src="t (1).png" alt="Brinquedo Top T - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/t (1).png', 'Brinquedo Top T - Foto 1')">
+                            <img src="t (2).png" alt="Brinquedo Top T - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/t (2).png', 'Brinquedo Top T - Foto 2')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -480,28 +376,12 @@
                     </div>
                 </div>
 
-                <!-- Brinquedo W -->
+                <!-- Brinquedo W (com carrossel) -->
                 <div class="card-hover bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-6 border-2 border-amber-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-w">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoW1', 'Brinquedo Incrível W - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-amber-200 to-amber-300">
-                                    <div class="text-5xl mb-2 z-10 relative">⚡</div>
-                                    <div class="w-28 h-16 bg-amber-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🔥</div>
-                                    </div>
-                                    <p class="text-amber-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoW2', 'Brinquedo Incrível W - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-amber-300 to-amber-400">
-                                    <div class="text-5xl mb-2 z-10 relative">💥</div>
-                                    <div class="w-28 h-16 bg-amber-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">⚡</div>
-                                    </div>
-                                    <p class="text-amber-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
+                            <img src="w (1).png" alt="Brinquedo Incrível W - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/w (1).png', 'Brinquedo Incrível W - Foto 1')">
+                            <img src="w (2).png" alt="Brinquedo Incrível W - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/w (2).png', 'Brinquedo Incrível W - Foto 2')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -533,28 +413,12 @@
                     </div>
                 </div>
 
-                <!-- Brinquedo X -->
+                <!-- Brinquedo X (com carrossel) -->
                 <div class="card-hover bg-gradient-to-br from-violet-100 to-purple-100 rounded-2xl p-6 border-2 border-violet-200">
                     <div class="relative mb-4 h-48 overflow-hidden rounded-lg cursor-pointer">
                         <div class="carousel-container" id="carousel-x">
-                            <div class="carousel-image w-full h-full" onclick="openImageModal('brinquedoX1', 'Brinquedo Extremo X - Foto 1')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-violet-200 to-violet-300">
-                                    <div class="text-5xl mb-2 z-10 relative">🎯</div>
-                                    <div class="w-28 h-16 bg-violet-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">💫</div>
-                                    </div>
-                                    <p class="text-violet-700 font-bold text-xs mt-1 z-10 relative">Foto 1</p>
-                                </div>
-                            </div>
-                            <div class="carousel-image w-full h-full hidden" onclick="openImageModal('brinquedoX2', 'Brinquedo Extremo X - Foto 2')">
-                                <div class="toy-image w-full h-full bg-gradient-to-br from-violet-300 to-violet-400">
-                                    <div class="text-5xl mb-2 z-10 relative">🌟</div>
-                                    <div class="w-28 h-16 bg-violet-600 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                                        <div class="text-white text-2xl">🎯</div>
-                                    </div>
-                                    <p class="text-violet-700 font-bold text-xs mt-1 z-10 relative">Foto 2</p>
-                                </div>
-                            </div>
+                            <img src="x (1).png" alt="Brinquedo Extremo X - Foto 1" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300" onclick="openImageModal('./imagem/x (1).png', 'Brinquedo Extremo X - Foto 1')">
+                            <img src="x (2).png" alt="Brinquedo Extremo X - Foto 2" class="carousel-image w-full h-full object-cover hover:scale-105 transition-transform duration-300 hidden" onclick="openImageModal('./imagem/x (2).png', 'Brinquedo Extremo X - Foto 2')">
                         </div>
                         <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center pointer-events-none">
                             <div class="text-white text-2xl opacity-0 hover:opacity-100 transition-opacity">🔍</div>
@@ -707,34 +571,21 @@
             </div>
             <p class="text-blue-100 mb-4">Transformando festas em momentos inesquecíveis desde 2020</p>
             <p class="text-sm text-blue-200">© 2024 KidPlay Brinquedão. Todos os direitos reservados.</p>
-            <div class="flex flex-col sm:flex-row gap-2 justify-center mt-4">
-                <button onclick="getAllPayments()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                    Ver Pedidos (Admin) 📊
-                </button>
-                <button onclick="testarWebhook()" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
-                    Testar Webhook 🧪
-                </button>
-            </div>
+            <button onclick="getAllPayments()" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                Ver Pedidos (Admin) 📊
+            </button>
         </div>
     </footer>
 
     <!-- Modal de Imagem Ampliada -->
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50" onclick="closeImageModal()">
-        <div class="relative max-w-4xl max-h-screen p-4" onclick="event.stopPropagation()">
+        <div class="relative max-w-4xl max-h-screen p-4">
             <button onclick="closeImageModal()" class="absolute top-2 right-2 text-white text-3xl hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">
                 ×
             </button>
-            <div id="modalImageContainer" class="w-full max-w-2xl mx-auto">
-                <img id="modalImage" src="" alt="" class="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl" style="display: none;" />
-                <div id="modalPlaceholder" class="toy-image w-96 h-72 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg mx-auto flex flex-col items-center justify-center">
-                    <div class="text-8xl mb-4 z-10 relative">🎪</div>
-                    <div class="w-48 h-32 bg-gray-500 rounded-lg flex items-center justify-center z-10 relative shadow-lg">
-                        <div class="text-white text-4xl">🎠</div>
-                    </div>
-                </div>
-            </div>
+            <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
             <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-70 text-white px-4 py-2 rounded-lg">
-                <p id="modalImageTitle" class="text-center font-semibold">Brinquedo</p>
+                <p id="modalImageTitle" class="text-center font-semibold"></p>
             </div>
         </div>
     </div>
@@ -750,23 +601,16 @@
                     <p class="text-sm text-gray-600" id="modalPriceLabel">Valor:</p>
                     <p class="text-3xl font-bold text-purple-600" id="modalPrice">R$ 0</p>
                 </div>
-                <div class="flex flex-col space-y-3">
-                    <div class="flex space-x-3">
-                        <button onclick="openPixModal()" class="flex-1 bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm">
-                            PIX 💰
-                        </button>
-                        <button onclick="openPaymentModal()" class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm">
-                            Cartão 💳
-                        </button>
-                    </div>
-                    <div class="flex space-x-3">
-                        <button onclick="contactWhatsApp()" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm">
-                            WhatsApp 📱
-                        </button>
-                        <button onclick="closeModal()" class="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded-lg transition-colors text-sm">
-                            Fechar
-                        </button>
-                    </div>
+                <div class="flex space-x-4">
+                    <button onclick="closeModal()" class="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-lg transition-colors">
+                        Fechar
+                    </button>
+                    <button onclick="contactWhatsApp()" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        WhatsApp 📱
+                    </button>
+                    <button onclick="openPaymentModal()" class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        Pagar Agora 💳
+                    </button>
                 </div>
             </div>
         </div>
@@ -837,42 +681,6 @@
         </div>
     </div>
 
-    <!-- Modal de Pagamento PIX -->
-    <div id="pixModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
-            <div class="text-4xl mb-4">💰</div>
-            <h4 class="text-2xl font-bold text-gray-800 mb-4">Pagamento via PIX</h4>
-            <div class="bg-blue-50 rounded-lg p-4 mb-6">
-                <p class="text-sm text-gray-600">Produto:</p>
-                <p class="font-bold text-blue-600" id="pixProduct">-</p>
-                <p class="text-sm text-gray-600 mt-1">Valor:</p>
-                <p class="text-2xl font-bold text-blue-800" id="pixAmount">R$ 0</p>
-            </div>
-            
-            <div id="pixLoading" class="mb-6">
-                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-2"></div>
-                <p class="text-gray-600">Gerando código PIX...</p>
-            </div>
-            
-            <div id="pixContent" class="hidden">
-                <img id="qrCode" src="" alt="QR Code PIX" class="w-64 h-64 mx-auto mb-4 border rounded-lg" />
-                <div class="bg-gray-50 rounded-lg p-4 mb-4">
-                    <p class="text-sm text-gray-600 mb-2">Código PIX:</p>
-                    <p id="pixCode" class="text-xs font-mono bg-white p-2 rounded border break-all"></p>
-                </div>
-                <button onclick="copiarPix()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors mb-4">
-                    Copiar código PIX 📋
-                </button>
-                <p id="statusMsg" class="text-green-600 text-sm mb-2"></p>
-                <p id="errorMsg" class="text-red-600 text-sm mb-4"></p>
-            </div>
-            
-            <button onclick="closePixModal()" class="w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-lg transition-colors">
-                Fechar
-            </button>
-        </div>
-    </div>
-
     <!-- Modal de Sucesso -->
     <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
@@ -900,44 +708,18 @@
             });
         }
 
-        function openImageModal(imageId, imageTitle) {
+        function openImageModal(imageSrc, imageTitle) {
+            document.getElementById('modalImage').src = imageSrc;
             document.getElementById('modalImageTitle').textContent = imageTitle;
-            
-            // Tentar carregar a imagem real primeiro
-            const modalImage = document.getElementById('modalImage');
-            const modalPlaceholder = document.getElementById('modalPlaceholder');
-            
-            // Resetar estado
-            modalImage.style.display = 'none';
-            modalPlaceholder.style.display = 'flex';
-            
-            // Tentar carregar a imagem
-            modalImage.src = imageId + '.jpg';
-            modalImage.onload = function() {
-                modalPlaceholder.style.display = 'none';
-                modalImage.style.display = 'block';
-            };
-            modalImage.onerror = function() {
-                // Se a imagem não carregar, manter o placeholder
-                modalPlaceholder.style.display = 'flex';
-                modalImage.style.display = 'none';
-            };
-            
             document.getElementById('imageModal').classList.remove('hidden');
             document.getElementById('imageModal').classList.add('flex');
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden'; // Previne scroll da página
         }
 
         function closeImageModal() {
             document.getElementById('imageModal').classList.add('hidden');
             document.getElementById('imageModal').classList.remove('flex');
-            document.body.style.overflow = 'auto';
-            
-            // Limpar a imagem do modal
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = '';
-            modalImage.style.display = 'none';
-            document.getElementById('modalPlaceholder').style.display = 'flex';
+            document.body.style.overflow = 'auto'; // Restaura scroll da página
         }
 
         function showCarouselImage(carouselId, imageIndex) {
@@ -945,9 +727,13 @@
             const images = carousel.querySelectorAll('.carousel-image');
             const dots = carousel.parentElement.querySelectorAll('button');
             
+            // Esconder todas as imagens
             images.forEach(img => img.classList.add('hidden'));
+            
+            // Mostrar a imagem selecionada
             images[imageIndex].classList.remove('hidden');
             
+            // Atualizar os dots
             dots.forEach((dot, index) => {
                 if (index === imageIndex) {
                     dot.classList.remove('opacity-50');
@@ -1013,7 +799,6 @@
                 closeImageModal();
                 closeModal();
                 closePaymentModal();
-                closePixModal();
                 closeSuccessModal();
             }
         });
@@ -1027,7 +812,7 @@
             
             document.getElementById('paymentModal').classList.remove('hidden');
             document.getElementById('paymentModal').classList.add('flex');
-            closeModal();
+            closeModal(); // Fecha o modal anterior
         }
 
         function closePaymentModal() {
@@ -1065,14 +850,17 @@
         document.getElementById('paymentForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Simular processamento
             const submitButton = e.target.querySelector('button[type="submit"]');
             submitButton.textContent = 'Processando...';
             submitButton.disabled = true;
             
             setTimeout(() => {
+                // Gerar número do pedido
                 const orderNumber = '#KP' + Date.now().toString().slice(-6);
                 document.getElementById('orderNumber').textContent = orderNumber;
                 
+                // Coletar dados do formulário
                 const paymentData = {
                     orderNumber: orderNumber,
                     timestamp: new Date().toISOString(),
@@ -1092,12 +880,15 @@
                     }
                 };
                 
+                // Salvar dados localmente (simulação)
                 savePaymentData(paymentData);
                 
+                // Fechar modal de pagamento e mostrar sucesso
                 closePaymentModal();
                 document.getElementById('successModal').classList.remove('hidden');
                 document.getElementById('successModal').classList.add('flex');
                 
+                // Resetar botão
                 submitButton.textContent = 'Finalizar Pagamento 🎉';
                 submitButton.disabled = false;
             }, 2000);
@@ -1105,10 +896,12 @@
 
         // Configuração da API JSONBin.io
         const JSONBIN_API_KEY = '$2a$10$/5zaBAXLcMkEPVYX3vQfBul7u2Q7tXXRPR2riSUGTiLTIM0p7I4Cq';
-        const JSONBIN_BIN_ID = '676b8a4bad19ca34f8d4f123';
+        const JSONBIN_BIN_ID = '676b8a4bad19ca34f8d4f123'; // ID do bin que será criado automaticamente
 
+        // Função para salvar dados na API JSONBin.io
         async function savePaymentData(data) {
             try {
+                // Primeiro, tentar buscar dados existentes
                 let existingData = [];
                 try {
                     const getResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
@@ -1127,8 +920,10 @@
                     console.log('Primeiro pedido - criando novo bin');
                 }
 
+                // Adicionar novo pedido
                 existingData.push(data);
 
+                // Salvar dados atualizados
                 const saveResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`, {
                     method: 'PUT',
                     headers: {
@@ -1142,6 +937,7 @@
                 });
 
                 if (!saveResponse.ok) {
+                    // Se o bin não existe, criar um novo
                     const createResponse = await fetch('https://api.jsonbin.io/v3/b', {
                         method: 'POST',
                         headers: {
@@ -1167,6 +963,7 @@
                     console.log('📊 Total de pedidos:', existingData.length);
                 }
 
+                // Backup local (caso a API falhe)
                 let savedPayments = JSON.parse(localStorage.getItem('kidplay_payments') || '[]');
                 savedPayments.push(data);
                 localStorage.setItem('kidplay_payments', JSON.stringify(savedPayments));
@@ -1174,6 +971,7 @@
             } catch (error) {
                 console.error('❌ Erro ao salvar na API:', error);
                 
+                // Fallback: salvar apenas localmente
                 let savedPayments = JSON.parse(localStorage.getItem('kidplay_payments') || '[]');
                 savedPayments.push(data);
                 localStorage.setItem('kidplay_payments', JSON.stringify(savedPayments));
@@ -1182,6 +980,7 @@
             }
         }
 
+        // Função para buscar todos os pedidos (para administração)
         async function getAllPayments() {
             try {
                 const response = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
@@ -1206,232 +1005,7 @@
             }
         }
 
-        let currentTransactionId = null;
-        let webhookCheckInterval = null;
-
-        function openPixModal() {
-            document.getElementById('pixProduct').textContent = currentProduct;
-            const actionText = currentAction === 'rent' ? 'Aluguel' : 'Compra';
-            const priceText = currentAction === 'rent' ? `R$ ${currentPrice}/dia` : `R$ ${currentPrice}`;
-            document.getElementById('pixAmount').textContent = priceText;
-            
-            document.getElementById('pixModal').classList.remove('hidden');
-            document.getElementById('pixModal').classList.add('flex');
-            document.getElementById('pixLoading').classList.remove('hidden');
-            document.getElementById('pixContent').classList.add('hidden');
-            
-            closeModal();
-            
-            gerarPagamentoPix();
-        }
-
-        function closePixModal() {
-            document.getElementById('pixModal').classList.add('hidden');
-            document.getElementById('pixModal').classList.remove('flex');
-            
-            if (webhookCheckInterval) {
-                clearInterval(webhookCheckInterval);
-                webhookCheckInterval = null;
-            }
-            
-            document.getElementById('qrCode').src = '';
-            document.getElementById('pixCode').textContent = '';
-            document.getElementById('statusMsg').textContent = '';
-            document.getElementById('errorMsg').textContent = '';
-            currentTransactionId = null;
-        }
-
-        async function gerarPagamentoPix() {
-            console.log('🔄 Iniciando geração de PIX...');
-            
-            setTimeout(() => {
-                try {
-                    const transactionId = 'KP_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-                    const pixCode = '00020126580014BR.GOV.BCB.PIX0136' + transactionId + '520400005303986540' + currentPrice.replace('.', '') + '.005802BR5925KidPlay Brinquedao LTDA6009SAO PAULO62070503***6304';
-                    
-                    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(pixCode)}`;
-                    
-                    currentTransactionId = transactionId;
-                    
-                    document.getElementById('pixLoading').classList.add('hidden');
-                    document.getElementById('pixContent').classList.remove('hidden');
-                    
-                    document.getElementById('qrCode').src = qrCodeUrl;
-                    document.getElementById('qrCode').style.display = 'block';
-                    document.getElementById('pixCode').textContent = pixCode;
-                    document.getElementById('statusMsg').textContent = 'PIX gerado! Aguardando pagamento... ⏳';
-                    document.getElementById('errorMsg').textContent = '';
-                    
-                    console.log('✅ PIX simulado gerado com sucesso! ID:', currentTransactionId);
-                    
-                    iniciarMonitoramentoPagamento(currentTransactionId);
-                    
-                } catch (error) {
-                    console.error('❌ Erro ao gerar PIX simulado:', error);
-                    
-                    document.getElementById('pixLoading').classList.add('hidden');
-                    document.getElementById('pixContent').classList.remove('hidden');
-                    
-                    document.getElementById('errorMsg').textContent = 'Erro ao gerar PIX. Tente novamente.';
-                    document.getElementById('statusMsg').textContent = '';
-                    
-                    document.getElementById('qrCode').style.display = 'none';
-                    
-                    const retryButton = document.createElement('button');
-                    retryButton.textContent = 'Tentar Novamente 🔄';
-                    retryButton.className = 'w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors mb-4';
-                    retryButton.onclick = () => {
-                        retryButton.remove();
-                        document.getElementById('pixLoading').classList.remove('hidden');
-                        document.getElementById('pixContent').classList.add('hidden');
-                        setTimeout(gerarPagamentoPix, 1000);
-                    };
-                    
-                    const errorMsgElement = document.getElementById('errorMsg');
-                    errorMsgElement.parentNode.insertBefore(retryButton, errorMsgElement.nextSibling);
-                }
-            }, 2000);
-        }
-
-        function copiarPix() {
-            const codigo = document.getElementById('pixCode').textContent;
-            if (codigo) {
-                navigator.clipboard.writeText(codigo).then(() => {
-                    const button = event.target;
-                    const originalText = button.textContent;
-                    button.textContent = 'Copiado! ✅';
-                    button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
-                    button.classList.add('bg-green-500');
-                    
-                    setTimeout(() => {
-                        button.textContent = originalText;
-                        button.classList.remove('bg-green-500');
-                        button.classList.add('bg-blue-500', 'hover:bg-blue-600');
-                    }, 2000);
-                }).catch(() => {
-                    alert('Erro ao copiar. Tente selecionar o código manualmente.');
-                });
-            }
-        }
-
-        function iniciarMonitoramentoPagamento(transactionId) {
-            console.log('🔍 Iniciando monitoramento da transação:', transactionId);
-            
-            webhookCheckInterval = setInterval(async () => {
-                await verificarStatusPagamento(transactionId);
-            }, 3000);
-            
-            setTimeout(() => {
-                if (webhookCheckInterval) {
-                    clearInterval(webhookCheckInterval);
-                    webhookCheckInterval = null;
-                    console.log('⏰ Monitoramento encerrado - timeout');
-                }
-            }, 600000);
-        }
-
-        async function verificarStatusPagamento(transactionId) {
-            console.log('🔍 Verificando status da transação:', transactionId);
-            
-            const simulatedStatus = localStorage.getItem(`payment_${transactionId}`);
-            
-            if (simulatedStatus === 'paid') {
-                pagamentoAprovado({
-                    id: transactionId,
-                    status: 'paid',
-                    paidAt: new Date().toISOString()
-                });
-                
-                localStorage.removeItem(`payment_${transactionId}`);
-            }
-        }
-
-        function pagamentoAprovado(transactionData) {
-            console.log('🎉 PAGAMENTO APROVADO!', transactionData);
-            
-            if (webhookCheckInterval) {
-                clearInterval(webhookCheckInterval);
-                webhookCheckInterval = null;
-            }
-            
-            document.getElementById('statusMsg').textContent = '✅ Pagamento aprovado! Processando pedido...';
-            document.getElementById('statusMsg').className = 'text-green-600 text-lg font-bold mb-2';
-            
-            const orderData = {
-                orderNumber: '#KP' + Date.now().toString().slice(-6),
-                timestamp: new Date().toISOString(),
-                product: currentProduct,
-                action: currentAction,
-                price: currentPrice,
-                paymentMethod: 'PIX',
-                transactionId: transactionData.id,
-                status: 'approved',
-                paidAt: transactionData.paidAt || new Date().toISOString()
-            };
-            
-            savePaymentData(orderData);
-            
-            setTimeout(() => {
-                closePixModal();
-                document.getElementById('orderNumber').textContent = orderData.orderNumber;
-                document.getElementById('successModal').classList.remove('hidden');
-                document.getElementById('successModal').classList.add('flex');
-            }, 2000);
-        }
-
-        function pagamentoExpirado(status) {
-            console.log('⏰ Pagamento expirado ou cancelado:', status);
-            
-            if (webhookCheckInterval) {
-                clearInterval(webhookCheckInterval);
-                webhookCheckInterval = null;
-            }
-            
-            const statusMsg = document.getElementById('statusMsg');
-            statusMsg.textContent = status === 'expired' ? '⏰ PIX expirado. Gere um novo código.' : '❌ Pagamento cancelado.';
-            statusMsg.className = 'text-red-600 text-sm mb-2';
-            
-            const retryButton = document.createElement('button');
-            retryButton.textContent = 'Gerar Novo PIX 🔄';
-            retryButton.className = 'w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors mb-4';
-            retryButton.onclick = () => {
-                retryButton.remove();
-                document.getElementById('pixLoading').classList.remove('hidden');
-                document.getElementById('pixContent').classList.add('hidden');
-                setTimeout(gerarPagamentoPix, 1000);
-            };
-            
-            statusMsg.parentNode.insertBefore(retryButton, statusMsg.nextSibling);
-        }
-
-        function simularWebhook(transactionId, status = 'paid') {
-            console.log('🧪 Simulando webhook:', { transactionId, status });
-            
-            if (status === 'paid') {
-                pagamentoAprovado({
-                    id: transactionId,
-                    status: 'paid',
-                    paidAt: new Date().toISOString()
-                });
-            } else {
-                pagamentoExpirado(status);
-            }
-        }
-
-        function testarWebhook() {
-            if (currentTransactionId) {
-                console.log('🧪 Testando webhook para transação:', currentTransactionId);
-                
-                localStorage.setItem(`payment_${currentTransactionId}`, 'paid');
-                
-                simularWebhook(currentTransactionId, 'paid');
-            } else {
-                console.log('❌ Nenhuma transação ativa para testar');
-                alert('⚠️ Primeiro gere um PIX para poder testar o webhook!');
-            }
-        }
-
-        // Auto-rotação dos carrosséis
+        // Auto-rotação dos carrosséis (opcional)
         setInterval(() => {
             const carousels = ['carousel-a', 'carousel-c', 'carousel-k', 'carousel-p', 'carousel-t', 'carousel-w', 'carousel-x'];
             carousels.forEach(carouselId => {
@@ -1443,7 +1017,7 @@
                     showCarouselImage(carouselId, nextImage);
                 }
             });
-        }, 5000);
+        }, 5000); // Muda a cada 5 segundos
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96bba4d47267cae2',t:'MTc1NDYyMDc3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96af478ca5c77e18',t:'MTc1NDQ5MTEyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
